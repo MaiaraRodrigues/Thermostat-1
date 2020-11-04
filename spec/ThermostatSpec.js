@@ -19,19 +19,19 @@ describe('Thermostat', function() {
     thermostat.down();
     expect(thermostat.getCurrentTemperature()).toEqual(19);
   });
- 
+
   it('raises error if temperature is less than 10 degrees', function() {
-   thermostat.down();
-   thermostat.down();
-   thermostat.down();
-   thermostat.down();
-   thermostat.down();
-   thermostat.down();
-   thermostat.down();
-   thermostat.down();
-   thermostat.down();
-   thermostat.down();
-   thermostat.down();
-   expect(thermostat.getCurrentTemperature).toThrowError('The minimum temperature is 10 degrees')
+  thermostat.down();
+  thermostat.down();
+  thermostat.down();
+  thermostat.down();
+  thermostat.down();
+  thermostat.down();
+  thermostat.down();
+  thermostat.down();
+  thermostat.down();
+  thermostat.down();
+  thermostat.down();
+  expect(thermostat.down()).toEqual('The minimum temperature is 10 degrees');
   });
 });
