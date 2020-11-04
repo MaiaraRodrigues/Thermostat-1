@@ -20,7 +20,7 @@ describe('Thermostat', function() {
     expect(thermostat.getCurrentTemperature()).toEqual(19);
   });
 
-  it('raises error if temperature is less than 10 degrees', function() {
+  it('has a minimum of 10 degrees', function() {
   thermostat.down();
   thermostat.down();
   thermostat.down();
@@ -32,6 +32,16 @@ describe('Thermostat', function() {
   thermostat.down();
   thermostat.down();
   thermostat.down();
-  expect(thermostat.down()).toEqual('The minimum temperature is 10 degrees');
+  expect(thermostat.getCurrentTemperature()).toEqual(10);
+  });
+
+  it ('if PMS is on, the maximum temperature is 25 degrees', function(){
+    thermostat.up();
+    thermostat.up();
+    thermostat.up();
+    thermostat.up();
+    thermostat.up();
+    thermostat.up();
+    expect(thermostat.getCurrentTemperature()).toEqual(25);
   });
 });
