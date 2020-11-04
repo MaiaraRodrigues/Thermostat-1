@@ -1,3 +1,5 @@
+'use strict';
+
 describe('Thermostat', function() {
 
   let thermostat;
@@ -35,13 +37,13 @@ describe('Thermostat', function() {
   expect(thermostat.getCurrentTemperature()).toEqual(10);
   });
 
-  it ('if PMS is on, the maximum temperature is 25 degrees', function(){
-    thermostat.up();
-    thermostat.up();
-    thermostat.up();
-    thermostat.up();
-    thermostat.up();
-    thermostat.up();
-    expect(thermostat.getCurrentTemperature()).toEqual(25);
-  });
+  // it ('if PSM is on, the maximum temperature is 25 degrees', function(){
+  //   thermostat.up();
+  //   thermostat.up();
+  //   thermostat.up();
+  //   thermostat.up();
+  //   thermostat.up();
+  //   thermostat.up();
+  //   expect(thermostat.getCurrentTemperature()).toEqual(25);
+  // });
 });
