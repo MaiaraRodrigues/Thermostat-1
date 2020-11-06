@@ -11,7 +11,7 @@ describe('Thermostat', function() {
   it('starts the thermostat at 20 degrees', function() {
     expect(thermostat.getCurrentTemperature()).toEqual(20);
   });
-  
+
   it('increases the temperature with an up function', function() {
     thermostat.up();
     expect(thermostat.getCurrentTemperature()).toEqual(21);
@@ -23,18 +23,8 @@ describe('Thermostat', function() {
   });
 
   it('has a minimum of 10 degrees', function() {
-  thermostat.down();
-  thermostat.down();
-  thermostat.down();
-  thermostat.down();
-  thermostat.down();
-  thermostat.down();
-  thermostat.down();
-  thermostat.down();
-  thermostat.down();
-  thermostat.down();
-  thermostat.down();
-  expect(thermostat.getCurrentTemperature()).toEqual(10);
+    for(var i = 0; i < 10; i++) { thermostat.down() }
+    expect(thermostat.getCurrentTemperature()).toEqual(10);
   });
 
   it('has a power saving mode by default', function() {
@@ -71,7 +61,7 @@ describe('Thermostat', function() {
        expect(thermostat.getCurrentTemperature()).toEqual(32);
      });
    });
-  
+
    it('can be reset to the default temperature', function() {
      for (var i = 0; i< 6; i++) {
        thermostat.up();
@@ -109,6 +99,6 @@ describe('Thermostat', function() {
 
 
   });
- 
+
 
 });

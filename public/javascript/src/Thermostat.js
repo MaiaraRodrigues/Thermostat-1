@@ -1,7 +1,7 @@
 'use strict';
 
 class Thermostat{
-  
+
   constructor() {
     this.MINIMUM_TEMPERATURE = 10;
     this.DEFAULT_TEMPERATURE = 20;
@@ -23,7 +23,7 @@ class Thermostat{
       }
     this.temperature += 1;
     };
-  
+
     down () {
       if(this.isMinimumTemperature()) {
         return;
