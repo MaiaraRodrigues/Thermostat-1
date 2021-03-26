@@ -6,6 +6,7 @@
     <script src="./javascript/src/interface.js"></script>
     <script src="./javascript/src/thermostat.js"></script>
     <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">
   </head>
   <body>
     <section>
@@ -19,13 +20,16 @@
           <option value="tokyo">Tokyo</option>
         </select>
       </section>
-      <p>
-        <button id="temperature-up">+</button>
-        <button id="temperature-down">-</button>
-        <button id="temperature-reset">reset</button>
-        power saving mode is <span id="power-saving-status">on</span>
-        <button id="powersaving-on">PSM on</button>
-        <button id="powersaving-off">PSM off</button>
+      <p class="temperature-buttons">
+        <button class="button" id="temperature-up">Up</button>
+        <button class="button" id="temperature-down">Down</button>
+        <button class="button" id="temperature-reset">Reset</button>
+
+
+        Power saving mode is
+        <span class="status-psm" id="power-saving-status">on</span>
+        <button class="button" id="powersaving-on">Mode on</button>
+        <button class="button" id="powersaving-off">Mode off</button>
         <!-- <button id="view-usage"></button> -->
       </p>
     </section>

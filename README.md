@@ -1,4 +1,6 @@
-# Thermostat Challenge
+# Thermostat
+
+
 
 ## Specification:
 
