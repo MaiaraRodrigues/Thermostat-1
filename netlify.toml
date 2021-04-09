@@ -3,7 +3,7 @@
 
 [[redirects]]
   from = "/*"
-  to = "public/index.html"
+  to = "./public/index.html"
   status = 200
 
 [[headers]]
