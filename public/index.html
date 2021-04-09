@@ -7,31 +7,55 @@
     <script src="./javascript/src/thermostat.js"></script>
     <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&display=swap" rel="stylesheet">
   </head>
   <body>
-    <section>
-      <h1 id="temperature"></h1>
-      <section>
-        <h1>Current temperature: <span id="current-temperature"></span></h1>
-        <select id="current-city">
-          <option value="London">London</option>
-          <option value="New York">New York</option>
-          <option value="paris">Paris</option>
-          <option value="tokyo">Tokyo</option>
+      <!-- The weather reader:  -->
+        <div class="weather-cities"> 
+        <h1> Choose a city to find out the weather:
+        <select id="current-city"></h1>
+          <div class="drop-down" >
+            <option id="city" value="London">London</option>
+            <option id="city"  value="New York">New York</option>
+            <option value="paris">Paris</option>
+            <option value="madrid">Madrid</option>
+            <option value="Prague">Prague</option>
+            <option value="Budapest">Budapest</option>
+            <option value="Sofia">Sofia</option>
+            <option value="Istanbul">Istanbul</option>
+            <option value="Los Angeles">Los Angeles</option>
+            <option value="Piatra Neamţ">Piatra Neamţ</option>
+            <option value="Maringa">Maringa</option>
         </select>
+        
+        <h1>Current temperature <span id="current-temperature"></span>° C</h1>
       </section>
-      <p class="temperature-buttons">
-        <button class="button" id="temperature-up">Up</button>
-        <button class="button" id="temperature-down">Down</button>
-        <button class="button" id="temperature-reset">Reset</button>
+    </div>
+  </div>
+      <!-- End of weather reader -->
 
+    <!-- Temperature control:  -->
+      <div class="thermo-changes">
+        <div class="temperature-buttons">
+            <i class="arrow up"id="temperature-up"></i>
+            <section>
+              <h1 id="temperature"></h1>
+              <section>
+            <i class="arrow down" id="temperature-down"></i>
+        </div>
+
+          <button class="button" id="temperature-reset">Reset</button>
+              <!-- <button class="button" id="temperature-up"></i></button> -->
+        <!-- OLD <button class="button" id="temperature-down">Down</button> --> 
 
         Power saving mode is
         <span class="status-psm" id="power-saving-status">on</span>
-        <button class="button" id="powersaving-on">Mode on</button>
-        <button class="button" id="powersaving-off">Mode off</button>
+        <button class="button" id="powersaving-on">PSM on</button>
+        <button class="button" id="powersaving-off">PSM off</button>
         <!-- <button id="view-usage"></button> -->
-      </p>
+    
     </section>
+  </div>
   </body>
 </html>

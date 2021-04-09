@@ -3,7 +3,7 @@ require 'sinatra'
 
 class Thermostat < Sinatra::Base
 
-  get '/' do
+  get "/" do
     File.read('./public/index.html')
   end
 
