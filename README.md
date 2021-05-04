@@ -1,26 +1,24 @@
 # Thermostat
 
-
+Thermostat app that allows users to change and reset temperature and connects to weather API to fetch current temperature on different cities.
 
 ## Specification:
 
-xx Thermostat starts at 20 degrees  
+Thermostat starts at 20 degrees  
 
-xx You can increase the temperature with an up function  
+You can increase the temperature with an up function  
 
-xx You can decrease the temperature with a down function  
+You can decrease the temperature with a down function  
 
-xx The minimum temperature is 10 degrees  
+The minimum temperature is 10 degrees  
 
-xx If power saving mode is on, the maximum temperature is 25 degrees  
+If power saving mode is on, the maximum temperature is 25 degrees  
 
-xx If power saving mode is off, the maximum temperature is 32 degrees  
+If power saving mode is off, the maximum temperature is 32 degrees  
 
-xx  Power saving mode is on by default but it can also be turned off  
+Power saving mode is on by default but it can also be turned off  
 
-xx You can reset the temperature to 20 with a reset function  
+You can reset the temperature to 20 with a reset function  
 
 You can ask about the thermostat's current energy usage: < 18 is low-usage, <= 25 is medium-usage, anything else is high-usage.
-
-
-(In the challenges where we add an interface, low-usage will be indicated with green, medium-usage indicated with black, high-usage indicated with red.)
+Low-usageis indicated with green, medium-usage is indicated with black, high-usage is indicated with red. 
