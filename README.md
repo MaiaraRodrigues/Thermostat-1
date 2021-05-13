@@ -1,8 +1,12 @@
 # Thermostat
 
-Thermostat app that allows users to change and reset temperature and connects to weather API to fetch current temperature on different cities.
+This is a thermostat app that allows users to change and reset the temperature.
 
-## Specification:
+You can see the temperature on your city before choosing your temperature.
+
+The app connects to weather API to fetch current temperature on different cities.
+
+## Specifications:
 
 Thermostat starts at 20 degrees  
 
@@ -21,4 +25,4 @@ Power saving mode is on by default but it can also be turned off
 You can reset the temperature to 20 with a reset function  
 
 You can ask about the thermostat's current energy usage: < 18 is low-usage, <= 25 is medium-usage, anything else is high-usage.
-Low-usageis indicated with green, medium-usage is indicated with black, high-usage is indicated with red. 
+Low-usage is indicated with green, medium-usage is indicated with black, high-usage is indicated with red. 
